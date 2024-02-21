@@ -17,6 +17,9 @@ import io.restassured.specification.RequestSpecification;
 
 public class LMS_API {
 
+	
+	// online resourcee https://medium.com/@jidhiya_6779/data-driven-testing-using-rest-assured-fead113f8eeb
+	
 	{
 		baseURI = "https://entr-dev.loialcard.com";
 		basePath = "/api/login";
