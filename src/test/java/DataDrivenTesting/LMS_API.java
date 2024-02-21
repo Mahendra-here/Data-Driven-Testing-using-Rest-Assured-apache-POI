@@ -27,19 +27,27 @@ public class LMS_API {
 
 	@Test(dataProvider = "logincredentialsdata")
 	public void Login(String username, String password) {
-		JSONObject data = new JSONObject();
-		data.put("USERNAME", username);
-		data.put("PASSWORD", password);
-		Response resp_prog_details = given().auth().basic("Admin", "password")
-				.header("Content-Type", "application/json").body(data.toJSONString()).when().post().then()
-				.assertThat().statusCode(200).log().all().extract().response();
-		int statusCode = resp_prog_details.getStatusCode();
-		Assert.assertEquals(statusCode, 200);
-		System.out.println("The Response code" + statusCode);
-		String responseBody = resp_prog_details.getBody().asPrettyString();
-		//Assert.assertEquals(responseBody.contains(progdesc), true);
-		//Assert.assertEquals(responseBody.contains(progname), true);
+		JSONObject Data = new JSONObject();
+		Data.put("USERNAME", username);
+		Data.put("PASSWORD", password);
+		Response resp_prog_details = given()
+					.header("Content-Type", "application/json")
+					.body(Data.toJSONString()) 
+				.when()
+					.post()
+				.then()
+				 	.assertThat().statusCode(200)
+					.log().all()
+					.extract()
+					.response();
+					int statusCode = resp_prog_details.getStatusCode();
+					Assert.assertEquals(statusCode, 200);
+					System.out.println("The Response code : " + statusCode);
+//					String responseBody = resp_prog_details.getBody().asPrettyString();
+					//Assert.assertEquals(responseBody.contains(progdesc), true);
+					//Assert.assertEquals(responseBody.contains(progname), true);
 	}
+	
 
 	@DataProvider(name = "logincredentialsdata")
 	String[][] get_prog_data() throws IOException {

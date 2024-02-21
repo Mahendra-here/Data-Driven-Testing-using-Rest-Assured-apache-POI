@@ -2,12 +2,12 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-02-21T16:31:49 IST" name="Default suite" finished-at="2024-02-21T16:31:52 IST" duration-ms="3273">
+  <suite started-at="2024-02-21T17:26:58 IST" name="Default suite" finished-at="2024-02-21T17:27:01 IST" duration-ms="3084">
     <groups>
     </groups>
-    <test started-at="2024-02-21T16:31:49 IST" name="Default test" finished-at="2024-02-21T16:31:52 IST" duration-ms="3273">
+    <test started-at="2024-02-21T17:26:58 IST" name="Default test" finished-at="2024-02-21T17:27:01 IST" duration-ms="3084">
       <class name="DataDrivenTesting.LMS_API">
-        <test-method signature="Login(java.lang.String,java.lang.String)[pri:0, instance:DataDrivenTesting.LMS_API@59b38691]" started-at="2024-02-21T16:31:50 IST" name="Login" data-provider="logincredentialsdata" finished-at="2024-02-21T16:31:52 IST" duration-ms="2312" status="PASS">
+        <test-method signature="Login(java.lang.String,java.lang.String)[pri:0, instance:DataDrivenTesting.LMS_API@59b38691]" started-at="2024-02-21T17:26:59 IST" name="Login" data-provider="logincredentialsdata" finished-at="2024-02-21T17:27:01 IST" duration-ms="2248" status="PASS">
           <params>
             <param index="0">
               <value>

@@ -5,7 +5,7 @@
     <classes>
       <class name="DataDrivenTesting.LMS_API">
         <methods>
-          <include name="Login" invocation-numbers="1 2 3"/>
+          <include name="Login" invocation-numbers="0"/>
         </methods>
       </class> <!-- DataDrivenTesting.LMS_API -->
     </classes>
