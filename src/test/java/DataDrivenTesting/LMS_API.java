@@ -45,7 +45,7 @@ public class LMS_API {
 	String[][] get_prog_data() throws IOException {
 		String path = System.getProperty("user.dir") + "/src/test/java/DataDrivenTesting/ProgData.xlsx";
 		int rownum = XLUtils.getRowCount(path, "Sheet1");
-		int colnum = XLUtils.getCellCount(path, "Sheet1", 1);
+		int colnum = XLUtils.getCellCount(path, "Sheet1", 1);		
 		String progdata[][] = new String[rownum][colnum];
 		for (int i = 1; i <= rownum; i++) {
 			for (int j = 0; j < colnum; j++) {
